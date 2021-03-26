@@ -1,1 +1,7 @@
-<p>donation works!</p>
+<div class="form">
+    <img src="/assets/img/donate-qr.png" alt="image">
+</div>
+<div class="gpay">
+    <google-pay-button environment="TEST" buttonColor="black" buttonType="buy" [paymentRequest]="paymentRequest" [style.width.px]="buttonWidth" [style.height.px]="buttonHeight" (loadpaymentdata)="onLoadPaymentData($event)">
+    </google-pay-button>
+</div>
