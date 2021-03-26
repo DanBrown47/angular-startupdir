@@ -1,3 +1,10 @@
+.downs {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 body {
     background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
     font-family: sans-serif;
@@ -28,10 +35,6 @@ small {
 
 h3 {
     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
-}
-
-.social {
-    font-size: 21px !important
 }
 
 .rights {
