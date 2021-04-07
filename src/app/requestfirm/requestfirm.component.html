@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main-block">
+        <form class="form" #companya="ngForm" (ngSubmit)="addCompany()">
+            <h1>Request to add my firm</h1>
+            <fieldset>
+                <legend>
+                    <h3>Tell us who you are</h3>
+                </legend>
+                <!-- <div class="account-details">
+                    <div><label>Email*</label><input type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></div>
+                    <div><label>Contact No*</label><input type="text" name="contact" required></div>
+                </div> -->
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3> Firm Details</h3>
+                </legend>
+                <div class="firm-details">
+                    <div>
+                        <div><label for="company_name">Company_name*</label><input type="text" class="form-control" name="company_name" [(ngModel)]="company.company_name" required></div>
+                        <!-- <div><label>Organization*</label><input type="text" name="organization" [(ngModel)]="company.organization" required></div>
+                        <div><label>Location</label><input type="text" name="location" [(ngModel)]="company.location"></div>
+                        <div><label>Growth*</label><input type="text" name="growth" [(ngModel)]="company.growth" required></div>
+                        <div><label>Website</label><input type="text" name="websites" [(ngModel)]="company.websites"></div> -->
+                    </div>
+                    <div>
+                        <!-- <div><label>GSTIN*</label><input type="text" name="gstin" [(ngModel)]="company.gstin" required></div>
+                        <div><label>Name of owner</label><input type="text" name="company_owner" [(ngModel)]="company.company_owner"></div>
+                        <div><label>UPI ID</label><input type="text" name="upi_id" [(ngModel)]="company.upi_id"></div> -->
+
+                    </div>
+                </div>
+            </fieldset>
+
+            <button class="btn btn-primary btn-config" [disabled]="companya.form.invalid">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

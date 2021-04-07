@@ -13,7 +13,7 @@ export class AuthService {
 
     return this._http.post<any>("http://localhost:3000/admin/login",user)
     .subscribe((data)=>{
-      (console.log('Success'))
+      (console.log(data))
     })
   }
 

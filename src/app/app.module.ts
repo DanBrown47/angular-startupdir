@@ -13,6 +13,7 @@ import { DirectoryComponent } from './directory/directory.component';
 import { DonationComponent } from './donation/donation.component';
 import { LoginComponent } from './login/login.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { RequestfirmComponent } from './requestfirm/requestfirm.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
     DirectoryComponent,
     DonationComponent,
     LoginComponent,
-    AdminpanelComponent
+    AdminpanelComponent,
+    RequestfirmComponent
   ],
   imports: [
     BrowserModule,

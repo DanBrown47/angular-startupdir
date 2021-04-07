@@ -13,10 +13,6 @@ export class LoginComponent implements OnInit {
   title = 'Form';
   user = {email:'',
         passwd:''}
-  userVerify(){
-    console.log("Successful login in front end")
-
-  }
 
   constructor(private _auth:AuthService) { }
 

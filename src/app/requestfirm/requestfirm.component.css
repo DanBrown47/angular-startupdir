@@ -1,4 +1,4 @@
-<style>html,
+html,
 body {
     min-height: 100%;
 }
@@ -45,21 +45,21 @@ fieldset {
 }
 
 .account-details,
-.personal-details {
+.firm-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .account-details>div,
-.personal-details>div>div {
+.firm-details>div>div {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
 .account-details>div,
-.personal-details>div,
+.firm-details>div,
 input,
 label {
     width: 100%;
@@ -150,7 +150,7 @@ button:hover {
 
 @media (min-width: 568px) {
     .account-details>div,
-    .personal-details>div {
+    .firm-details>div {
         width: 50%;
     }
     label {
