@@ -9,7 +9,13 @@ import {AuthService} from '../auth.service';
 export class RequestfirmComponent implements OnInit {
 
   company = {company_name:'',
-
+  organization:'',
+  location:'',
+  growth:'',
+  gstin:'',
+  websites:'',
+  company_owner:'',
+  upi_id:''
           }
 
 
@@ -20,14 +26,7 @@ export class RequestfirmComponent implements OnInit {
   }
   addCompany(){
     console.log("In Function")
-    console.log(this.company.company_name)
+    console.log(this.company)
   }
 
 }
-// organization:'',
-// location:'',
-// growth:'',
-// gstin:'',
-// websites:'',
-// company_owner:'',
-// upi_id:''
