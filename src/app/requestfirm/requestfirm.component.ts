@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../auth.service';
+import { ManagerfirmService } from '../managerfirm.service';
 
 @Component({
   selector: 'app-requestfirm',
@@ -19,14 +19,14 @@ export class RequestfirmComponent implements OnInit {
           }
 
 
-  constructor() { }
+  constructor(private _firm:ManagerfirmService) { }
 
   ngOnInit(): void {
 
   }
   addCompany(){
-    console.log("In Function")
     console.log(this.company)
+    this._firm.addCompany(this.company)
   }
 
 }
