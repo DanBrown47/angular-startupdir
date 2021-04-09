@@ -13,8 +13,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let company of apidata">
-                <th scope="row">1</th>
+            <tr *ngFor="let company of apidata; let i = index">
+                <th scope="row">{{i+1}}</th>
                 <td>{{company.company_name}}</td>
                 <td>{{company.organization}}</td>
                 <td>{{company.location}}</td>
@@ -22,6 +22,7 @@
                 <td>{{company.gstin}}</td>
                 <td><a href="{{company.websites}}"><button>website</button></a></td>
                 <td><a routerLink="donate"><button>Donate</button></a></td>
+
             </tr>
 
         </tbody>

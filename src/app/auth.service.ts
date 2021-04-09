@@ -11,10 +11,8 @@ export class AuthService {
 
   loginUser(user:any){
 
-    return this._http.post<any>("http://localhost:3000/admin/login",user)
-    .subscribe((data)=>{
-      (console.log(data))
-    })
+    return this._http.post<any>("http://localhost:3000/admin/login",user);
+
   }
 
 }
