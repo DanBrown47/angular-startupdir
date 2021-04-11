@@ -13,6 +13,8 @@ COPY . /app
 
 EXPOSE 4200
 EXPOSE 3000
+EXPOSE 80
+EXPOSE 443
 
 RUN npm run build --prod
 

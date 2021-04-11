@@ -6,6 +6,8 @@
 
 /e2e
 
+/docs
+
 .gitignore
 
 *.md
