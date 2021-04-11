@@ -1,14 +1,22 @@
-# Headstart
+# Startdir | ICTAK | FSD Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+This project was Created with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
-## Development server
+>
+> The project foresees its power in crowdfunding and publicizing the startup industry to a new
+level of proximity between society and startups which leads to an increase in support,
+investment, low cost of advertisement, single hub for Venture Capitalists to get an insight on
+investing in startups that seems promising.
+>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+
+## Docker server
+
+Run `docker build -t ictak/angular-app .` for a building server.  Followed by `docker run -d -it -p 80:80/tcp --name angular-app ictak/angular-app:latest` Navigate to `http://localhost:4200/`. 
+
 
 ## Build
 
@@ -18,10 +26,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
