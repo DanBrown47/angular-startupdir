@@ -31,11 +31,9 @@
                         <div><label>Organization*</label><input type="text" name="organization" [(ngModel)]="company.organization" required></div>
                         <div><label>Location</label><input type="text" name="location" [(ngModel)]="company.location"></div>
                         <div><label>Growth*</label><input type="text" name="growth" [(ngModel)]="company.growth" required></div>
-                        <div><label>Website</label><input type="text" name="websites" [(ngModel)]="company.websites"></div>
                     </div>
                     <div>
                         <div><label>GSTIN*</label><input type="text" name="gstin" [(ngModel)]="company.gstin" required></div>
-                        <div><label>Name of owner</label><input type="text" name="company_owner" [(ngModel)]="company.company_owner"></div>
                         <div><label>UPI ID</label><input type="text" name="upi_id" [(ngModel)]="company.upi_id"></div>
 
                     </div>
@@ -48,3 +46,53 @@
 </body>
 
 </html>
+<!-- <div class='card'>
+    <form (ngSubmit)="editCompany()">
+        <div class='card-header'>
+            Edit Company
+        </div>
+        <div class='card-body'>
+            <div class='table-responsive'>
+                <table class='table'>
+
+                    <tbody>
+
+                        <tr>
+                            <td><label>Company Name</label></td>
+                            <td><input type="text" name="c_name" [(ngModel)]="company.company_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Organization</label></td>
+                            <td><input type="text" name="c_org" [(ngModel)]="company.organization" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Location</label></td>
+                            <td><input type="text" name="c_loc" [(ngModel)]="company.location" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Growth</label></td>
+                            <td><input type="text" name="c_growth" [(ngModel)]="company.growth" /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>GSTIN</label></td>
+                            <td><input type="text" name="c_gstin" [(ngModel)]="company.gstin" /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>UPIID</label></td>
+                            <td><input type="text" name="c_upi_id" [(ngModel)]="company.upi_id" /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Approval</label></td>
+                            <td><input type="text" name="c_approve" [(ngModel)]="company.approved" /></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div> -->

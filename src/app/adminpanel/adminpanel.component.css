@@ -1,0 +1,13 @@
+.main {
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+
+.nav-top {
+    border-top: 1px solid;
+}
+
+.bodydown {
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+<div>
+    <table class="table">
+        <thead class="dark">
+            <tr>
+                <th scope="col">Sl No</th>
+                <th scope="col">Company</th>
+                <th scope="col">Affliation</th>
+                <th scope="col"> Approved ?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let company of apidata; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{company.company_name}}</td>
+                <td>{{company.organization}}</td>
+                <td *ngIf="company.approved == '1';else elseBlock"><button class="btn btn-success">Approved</button></td>
+                <td>
+                    <ng-template #elseBlock><button class="btn btn-danger" (click)="editCompany(company)">Not approved</button></ng-template>
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
