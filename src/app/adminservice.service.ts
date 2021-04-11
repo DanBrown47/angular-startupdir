@@ -12,6 +12,11 @@ export class AdminserviceService {
 
 approveCompany(company_name:any){
     // console.log(company_name)
-    this.http.get("http://localhost:3000/approve/"+company_name)
+    return this.http.get("http://localhost:3000/admin/approve/"+company_name)
+}
+
+deleteCompany(id:any)
+{
+  return this.http.delete("http://localhost:3000/admin/remove/"+id)
 }
 }

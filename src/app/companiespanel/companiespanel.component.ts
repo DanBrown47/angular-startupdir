@@ -27,5 +27,11 @@ export class CompaniespanelComponent implements OnInit {
     console.log("ok")
 
 }
+  removeCompany(company:any){
+    this.adminservice.deleteCompany(company._id)
+    .subscribe((data) =>{
+      console.log(data)
+    } )
+  }
   }
 

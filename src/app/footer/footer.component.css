@@ -9,7 +9,7 @@ body {
     background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
     font-family: sans-serif;
     background: #2e3436;
-    height: 100 !important
+    height: 10px !important
 }
 
 .container-fluid {
@@ -18,7 +18,8 @@ body {
     background: #262626;
     color: #627482 !important;
     margin-bottom: 0;
-    padding-bottom: 0
+    padding-bottom: 0;
+    height: 50
 }
 
 small {

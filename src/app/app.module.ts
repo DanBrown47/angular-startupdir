@@ -14,10 +14,11 @@ import { DonationComponent } from './donation/donation.component';
 import { LoginComponent } from './login/login.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { RequestfirmComponent } from './requestfirm/requestfirm.component';
-import { UserspanelComponent } from './userspanel/userspanel.component';
+
 import { CompaniespanelComponent } from './companiespanel/companiespanel.component';
 import { ManagerfirmService } from './managerfirm.service';
 import { PanelupdateComponent } from './panelupdate/panelupdate.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +30,10 @@ import { PanelupdateComponent } from './panelupdate/panelupdate.component';
     LoginComponent,
     AdminpanelComponent,
     RequestfirmComponent,
-    UserspanelComponent,
+
     CompaniespanelComponent,
-    PanelupdateComponent
+    PanelupdateComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
