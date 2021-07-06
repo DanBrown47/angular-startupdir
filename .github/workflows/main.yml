@@ -1,16 +1,26 @@
 name: Angular CI
+
 on:
   push:
     branches: [ main ]
+
 jobs:
   build:
+
+
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
     - uses: actions/setup-node@v1 #this will install Node and npm on Ubuntu
       with:
-        node-version: '12.x'
+        node-version: ${{ matrix.node-version }}
+    
     - run: npm install
     - run: npm install -g @angular/cli 
+    - run: npm run test
     - run: ng build --prod --progress --output-path=dist 
