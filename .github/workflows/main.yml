@@ -4,11 +4,15 @@ on:
   push:
     branches: [ main ]
 
+env:
+  SERVER: development
+
 jobs:
   build:
 
 
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     strategy:
       matrix:
         node-version: [12.x]
